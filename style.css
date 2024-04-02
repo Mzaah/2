@@ -1,0 +1,84 @@
+/* CSS styles for the calculator */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+html {
+    background: url("huberman1.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+body {
+  font-family: "Outfit", Arial, sans-serif;
+  background-color: #ffffff00;
+  padding: 20px;
+}
+
+.container {
+  max-width:100%;
+  margin: 0 auto;
+  background-color: #ffffff7e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: #000000;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #000000;
+}
+
+input[type="time"] {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #161616;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  margin-left: auto;
+  color: #777;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    max-width: 300px;
+  }
+
+  input[type="time"] {
+    width: 80px;
+  }
+}
